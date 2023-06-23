@@ -1,0 +1,73 @@
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins",sans-serif;
+}
+
+.container {
+    height: 100vh;
+    background-color: #282c28a9;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 100px auto 60px;
+    grid-template-areas:
+    "logo logo nav nav nav nav nav nav nav nav nav nav"
+    " cnt cnt cnt cnt cnt cnt cnt cnt cnt cnt sd sd"
+    "ft ft ft ft ft ft ft ft ft ft ft ft "
+    ;
+    gap: 10px ;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100%;
+    margin-right: 70px;
+}
+ul li{
+    margin-right: 40px;
+    display: inline-block;
+}
+li a{
+    text-decoration: none;
+    color: #333;
+    font-weight: 600;
+}
+  h3{
+    text-align: center;
+    border-radius:  0 0 20px 20px ;
+    background-color: rgba(115, 255, 0, 0.616);
+    grid-area: logo;
+}
+  nav{
+    background-color: yellowgreen;
+    border-radius:  0 0 20px 20px ;
+    grid-area: nav;
+}
+.content{
+    background-color: rgb(210, 192, 30);
+    text-align: center;
+    margin-left: 10px;
+    border-radius: 20px;
+
+    grid-area: cnt;
+}
+aside{
+    text-align: center;
+    background-color: coral;
+    border-radius: 20px;
+    margin-right: 10px;
+
+    grid-area: sd;
+}
+footer{
+    text-align: center;
+    border-radius: 20px 20px 0 0 ;
+
+    background-color: rgb(212, 237, 100);
+    grid-area: ft;
+}
